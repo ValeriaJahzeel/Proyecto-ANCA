@@ -1,0 +1,93 @@
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,*:before, :after{
+	box-sizing: inherit;
+	}
+
+body{
+	font-family: 'Lato', sans serif;
+	font-size: 2rem;
+	line-height: 2;
+}
+
+/** Globales **/
+img{
+	max-width: 100%;
+}
+
+.contenedor{
+	width: 95%;
+	max-width: 120rem;
+	margin: 0 auto;
+}
+.site-header{
+	background-color: black;
+	padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio{
+	background-image: url(../img/info.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	min-height: 60rem;
+}
+
+.contenido-header{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.contenido-header{
+		text-align: left;
+	}
+}
+
+.contenido-header h1{   /*Manda a traer a h1 del div .contenido-header*/
+	color: #ffffff;
+	padding-bottom: 2rem;
+	max-width: 60rem;
+	line-height: 2;
+}
+
+.barra{
+	padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+	.barra{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+/** Navegacion **/
+.navegacion a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 2.2rem;
+	display: block;
+}
+
+@media (min-width: 768px){
+	.navegacion a{
+		display: inline-block;
+		font-size: 1.8rem;
+		margin-right: 2rem;
+	}
+	.navegacion a:last-of-type{
+		margin: 0;
+	}
+}
+
+.navegacion a:hover{
+		color: #12B5A2;
+}

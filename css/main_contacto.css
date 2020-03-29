@@ -79,3 +79,36 @@ h2 span{
     background-color: #fa9535;
 }
 
+.barra{
+	padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+	.barra{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.navegacion a{
+	color: #000000;
+	text-decoration: none;
+	font-size: 2.2rem;
+	display: block;
+}
+
+@media (min-width: 768px){
+	.navegacion a{
+		display: inline-block;
+		font-size: 1.8rem;
+		margin-right: 2rem;
+	}
+	.navegacion a:last-of-type{
+		margin: 0;
+	}
+}
+
+.navegacion a:hover{
+		color: #12B5A2;
+}
