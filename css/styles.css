@@ -180,12 +180,10 @@ img{
 .boton-hover{
 	cursor: pointer;
 }
-.boton-amarillo{
+.boton-azul{
 	background-color: #12B5A2;
 }
-.boton-verde{
-	background-color: #12B5A2;
-}
+
 
 /**Contacto Home**/
 .imagen-contacto{
