@@ -75,3 +75,30 @@ tabla>p{
     transform: scale(1.1);
     cursor: pointer;
 }
+
+@media screen and (max-width:1000px){
+    .tabla{
+        width: 45%;
+        max-width: none;
+        margin-bottom: 40px;
+        flex-grow: initial;
+    }
+}
+
+@media screen and (max-width:700px){
+    .tabla{
+        width: 45%;
+        padding: 30px;
+    }
+    .tabla>h2{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .tabla{
+        width: 85%;
+        padding: 20px;
+    }
+}
+
