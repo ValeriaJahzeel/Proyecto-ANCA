@@ -1,0 +1,81 @@
+html{
+    font-size: 16px;    /*Pder utilizar rem correctamente*/
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #9AD1ED;
+}
+
+.container{
+    max-width: 450px;
+    height: auto;
+    background-color: #EFEFEF;
+    margin: 5% auto;    /*Margen del 5% en la parte superior e inferior y automatico a los lados*/
+    padding-bottom: 1rem;
+}
+
+.form_top{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0 1rem; /*2 rem parte superior, 0 a los lados, 1 inferior*/
+    border-top: solid .4rem #F39B53;
+    margin-bottom: 1rem;
+}
+
+.form_top h2{
+    font-weight: bold;
+    color: #CAC8C8;
+    font-size: 18px;
+}
+
+h2 span{
+    color: #F39B53;
+}
+
+.form_reg{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn_form{
+    display: flex;
+    justify-content: space-around; /*Los botones mantienen
+    una separacion igual entre el borde y ellos*/
+    margin-top: 1rem;
+}
+
+.input, .btn_submit, .btn_reset, .mensaje{
+    background-color: #EFEFEF;
+    padding: .5rem;
+    margin: .5rem 0;
+    border: none;
+    border-bottom: solid #c8c8c8 .2rem;
+    transition: all .5s;
+}
+
+.input:focus{
+    border-bottom: solid #F39B53 .2rem;
+}
+
+.btn_submit, .btn_reset{
+    width: 40%;
+    border-bottom: none;
+    background-color: #31b1e5;
+    color: white;
+}
+
+.btn_reset{
+    background-color: #eda135;
+}
+
+.btn_submit:hover{      /*Cuand se pase el curssr por encima, el color va a cambiar*/
+    background-color: #4c9ed9;
+}
+
+.btn_reset:hover{
+    background-color: #fa9535;
+}
+
