@@ -46,7 +46,7 @@
             <h2>Formulario <span>Contacto</span></h2>
         </div>
 
-        <form class="form_reg" action="">
+        <form class="form_reg" action="" method="post">
             <input type="text" name="nombre" class="input" placeholder="Nombre"
             required autofocus>
             <input type="text" name="apellidop" class="input" placeholder="Apellido Paterno"
@@ -59,23 +59,24 @@
             <textarea class="input" cols="30" rows="10" placeholder="Escriba aqui su mensaje"></textarea>
 
             <div class="btn_form">
-                <input type="submit" name="enviar" class="btn_submit">
+                <input type="submit" name="enviar" class="btn_submit" value="Enviar">
             </div>
         </form>
     </div>
 </body>
 </html>
 
+
 <?php
     if (isset($_POST['enviar'])) {
-        $nombre = $_POST["nombre"];
-        $apellidop = $_POST["apellidop"];
-        $apellidom = $_POST["apellidom"];
-        $correo = $_POST["email"];
-        $telefono = $_POST["telefono"];
+        $nombre = $_POST['nombre'];
+        $apellidop = $_POST['apellidop'];
+        $apellidom = $_POST['apellidom'];
+        $correo = $_POST['email'];
+        $telefono = $_POST['telefono'];
         /*Id*/
 
-        $insertarDatos = "INSERT INTO clientes VALUES(
+        $insertarDatos = "INSERT INTO clientes (ApellidoP, ApellidoM, Nombre, Tel, Correo) VALUES(
                                                     '$apellidop', 
                                                     '$apellidom',
                                                     '$nombre',
