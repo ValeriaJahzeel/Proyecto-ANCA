@@ -1,11 +1,103 @@
 html{
-    font-size: 16px;    /*Pder utilizar rem correctamente*/
-    font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: lightblue;
 }
 
+*,*:before, :after{
+	box-sizing: inherit;
+	}
+
 body{
-    background-color: #9AD1ED;
+	font-family: 'Lato', sans serif;
+	font-size: 2rem;
+	line-height: 2;
 }
+
+/** Globales **/
+img{
+	max-width: 100%;
+}
+
+.contenedor2{
+	width: 95%;
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+/*Header*/
+.site-header{
+	background-color: black;
+	padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio{
+	background-image: url(../Imagenes/engineers-in-workshop-3862627.jpg);
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	min-height: 60rem;
+}
+
+.contenido-header{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.contenido-header{
+		text-align: left;
+	}
+}
+
+.contenido-header h1{   /*Manda a traer a h1 del div .contenido-header*/
+	color: #000000;
+	padding-bottom: 2rem;
+	max-width: 60rem;
+	line-height: 2;
+}
+
+.barra{
+	padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+	.barra{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+/*Fin header*/
+
+/** Navegacion **/
+.navegacion a{
+	color: #000000;
+	text-decoration: none;
+	font-size: 2.2rem;
+	display: block;
+}
+
+@media (min-width: 768px){
+	.navegacion a{
+		display: inline-block;
+		font-size: 1.8rem;
+		margin-right: 2rem;
+	}
+	.navegacion a:last-of-type{
+		margin: 0;
+	}
+}
+
+.navegacion a:hover{
+		color: #12B5A2;
+}
+/*Fin navegacion*/
+
+
 
 .container{
     max-width: 450px;
@@ -77,38 +169,4 @@ h2 span{
 
 .btn_reset:hover{
     background-color: #fa9535;
-}
-
-.barra{
-	padding-top: 3rem;
-}
-
-@media (min-width: 768px) {
-	.barra{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-}
-
-.navegacion a{
-	color: #000000;
-	text-decoration: none;
-	font-size: 2.2rem;
-	display: block;
-}
-
-@media (min-width: 768px){
-	.navegacion a{
-		display: inline-block;
-		font-size: 1.8rem;
-		margin-right: 2rem;
-	}
-	.navegacion a:last-of-type{
-		margin: 0;
-	}
-}
-
-.navegacion a:hover{
-		color: #12B5A2;
 }

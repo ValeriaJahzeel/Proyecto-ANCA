@@ -35,7 +35,7 @@ img{
 }
 
 .site-header.inicio{
-	background-image: url(../img/header.jpg);
+	background-image: url(../Imagenes/men-going-around-a-warehouse-1797428.jpg);
 	background-position: center center;
 	background-size: cover;
 	height: 100vh;
@@ -187,7 +187,7 @@ img{
 
 /**Contacto Home**/
 .imagen-contacto{
-	background-image: url(../img/contacto.jpg);
+	background-image: url(../Imagenes/person-typing-on-computer-keyboard-2058128.jpg);
 	background-position: center center;
 	background-size: cover;
 	height: 40rem;
