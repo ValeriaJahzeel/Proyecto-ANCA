@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <!--
+    
     <header class="site-header inicio ">
         <div class="contenedor2 contenido-header">
             <div class="barra">
@@ -40,7 +40,7 @@
             <h1>PRODUCTOS</h1>
         </div> Contenedor
     </header>
--->
+
     <div class="container">
         <div class="form_top">
             <h2>Formulario <span>Contacto</span></h2>
@@ -60,6 +60,10 @@
 
             <div class="btn_form">
                 <input type="submit" name="enviar" class="btn_submit" value="Enviar">
+                 <input type="submit" name="consulta" class="btn_submit" value="Consultar">
+                <input type="submit" name="elimina" class="btn_submit" value="Eliminar">
+
+                
             </div>
         </form>
     </div>
@@ -88,5 +92,10 @@
         if(!$ejecutarInsertar){
             echo"Error en la linea de sql";
         }
+    }
+
+    if (isset($_POST['consulta'])){
+        $insertarDatos = ("SELECT * FROM clientes WHERE id='$variable'");
+        while()
     }
 ?>
